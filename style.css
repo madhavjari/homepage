@@ -9,11 +9,11 @@ body {
   background-image: url(./imgs/background.jpg);
   background-size: cover;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 header {
   display: flex;
-  gap: none;
   padding: 3rem;
 }
 
@@ -25,29 +25,104 @@ header {
 
 .profile {
   position: relative;
-  flex: 1;
 }
 
+@media screen and (max-width: 420px) {
+  body {
+    margin: 1rem;
+  }
+  header {
+    flex-wrap: wrap;
+  }
+  .about {
+    width: 100%;
+  }
+
+  .about > h3 {
+    font-size: 0.5rem;
+  }
+
+  .icon {
+    width: 0.5rem;
+  }
+
+  .icon-small {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .about {
+    text-wrap: wrap;
+  }
+  body {
+    margin: 4rem;
+  }
+}
 .about {
-  flex: 1;
   padding-left: 1rem;
   background-color: white;
 }
 
 .about > * {
-  text-wrap: wrap;
   font-weight: normal;
+}
+
+.about > h3 {
+  color: rgb(49, 48, 48);
 }
 
 header > * > img {
   max-width: 300px;
 }
 
-img {
-  max-width: 200px;
+.icon {
+  width: 1.5rem;
 }
 
-.about > h3 {
-  font-size: 1rem;
-  color: rgb(49, 48, 48);
+.icon-small {
+  width: 1.2rem;
 }
+
+article > img {
+  width: 100%;
+  height: 200px;
+}
+
+article > div,
+article > h4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+article {
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(95, 97, 124);
+  border-radius: 5px;
+}
+
+article > h4 {
+  color: rgb(49, 48, 48);
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 3em;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.project > h3 {
+  flex: 1;
+  font-weight: normal;
+}
+/* article {
+  max-width: 320px;
+} */
