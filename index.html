@@ -4,11 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <h1>Madhav Jariwala</h1>
-      <img src="./imgs/myself.png" alt="Profile Photo of the owner" srcset="" />
+      <picture>
+        <img
+          sizes="(max-width: 381px) 100vw, 381px"
+          srcset="
+            ./imgs/myself_x4icbr_c_scale,w_200.png 200w,
+            ./imgs/myself_x4icbr_c_scale,w_305.png 305w,
+            ./imgs/myself_x4icbr_c_scale,w_381.png 381w
+          "
+          src="./imgs/myself_x4icbr_c_scale,w_381.png"
+          alt=""
+        />
+      </picture>
       <h2>About me</h2>
       <h3>
         Mechanical engineering graduate, now running my own fabric manufacturing
@@ -24,73 +36,148 @@
         href="https://www.linkedin.com/in/madhav-jariwala-b0522b54/"
         target="_blank"
         rel="noopener noreferrer"
-        >LinkedIn</a
-      >
+        ><img src="" alt="Linkedin"
+      /></a>
       <a
         href="https://github.com/madhavjari"
         target="_blank"
         rel="noopener noreferrer"
-        >Github</a
-      >
+        ><img src="" alt="Github"
+      /></a>
     </header>
     <section>
       <h2>My work</h2>
       <article>
-        <img src="" alt="" />
+        <img src="./imgs/battleship.png" alt="" />
         <div>
-          <h2>Battlship</h2>
-          <a href="https://github.com/madhavjari/battleship"
-            ><img src="" alt=""
+          <h3>Battlship</h3>
+          <a
+            href="https://github.com/madhavjari/battleship"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="" alt="git"
           /></a>
-          <a href="https://madhavjari.github.io/battleship/"
-            ><img src="" alt=""
+          <a
+            href="https://madhavjari.github.io/battleship/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="" alt="page"
           /></a>
         </div>
+        <h4>
+          Classic Battleship game. The player that hits all the opponent ship
+          first, wins.
+        </h4>
       </article>
       <article>
-        <img src="" alt="" />
-        <h2>Restaurant Page</h2>
-        <a href="https://github.com/madhavjari/restaurant-page"
-          ><img src="" alt="" />
+        <img src="./imgs/restaurant.png" alt="" />
+        <h3>Restaurant Page</h3>
+        <a
+          href="https://github.com/madhavjari/restaurant-page"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="" alt="git" />
         </a>
-        <a href="https://madhavjari.github.io/restaurant-page/">
-          <img src="" alt="" />
+        <a
+          href="https://madhavjari.github.io/restaurant-page/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="" alt="page" />
         </a>
+        <h4>
+          A static page for the restaurant. It contains the restaurant homepage,
+          menu and contact.
+        </h4>
       </article>
       <article>
-        <img src="" alt="" />
+        <img src="./imgs/todo.png" alt="" />
         <h2>Todo -list</h2>
-        <a href="https://github.com/madhavjari/todo"><img src="" alt="" /></a>
-        <a href="https://madhavjari.github.io/todo/"><img src="" alt="" /></a>
+        <a
+          href="https://github.com/madhavjari/todo"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="" alt="git"
+        /></a>
+        <a
+          href="https://madhavjari.github.io/todo/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="" alt="page"
+        /></a>
+        <h4>
+          An app to manage your task. All CRUD operations are possible. Local
+          storage is also enabled.
+        </h4>
       </article>
       <article>
-        <img src="" alt="" />
+        <img src="./imgs/weather.png" alt="" />
         <h2>Weather App</h2>
-        <a href="https://github.com/madhavjari/weather"
-          ><img src="" alt=""
+        <a
+          href="https://github.com/madhavjari/weather"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="" alt="git"
         /></a>
-        <a href="https://madhavjari.github.io/weather/"
-          ><img src="" alt="" />
+        <a
+          href="https://madhavjari.github.io/weather/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="" alt="page" />
         </a>
+        <h4>
+          Web app to view weather of your choice city in real time. Created by
+          fetching API.
+        </h4>
       </article>
-      <article></article>
-      <article></article>
+      <article>
+        <img src="./imgs/library.png" alt="" />
+        <h2>Library</h2>
+        <a
+          href="https://github.com/madhavjari/library"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="" alt="git" />
+        </a>
+        <a
+          href="https://madhavjari.github.io/library/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="" alt="page" />
+        </a>
+        <h4>
+          App to store the book in your library. All CRUD operations are
+          possible.
+        </h4>
+      </article>
     </section>
     <footer>
       <h2>Contact Me</h2>
       <address>
-        <h3></h3>
+        <h3>Katargam, Surat, Gujarat, India, 395004</h3>
         <div>
           <img src="" alt="" />
-          <h3></h3>
+          <h3>+91-0005556660</h3>
         </div>
         <div>
           <img src="" alt="" />
-          <h3></h3>
+          <h3>madhavfakeid@fake.com</h3>
         </div>
       </address>
-      <img src="" alt="Github" />
-      <img src="" alt="LinkedIn" />
+      <a
+        href="https://github.com/madhavjari"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img src="" alt="Github"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/madhav-jariwala-b0522b54/"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img src="" alt="LinkedIn"
+      /></a>
     </footer>
   </body>
 </html>
