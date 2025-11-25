@@ -6,8 +6,14 @@
 }
 
 body {
-  background-image: url(./imgs/background.jpg);
-  background-size: cover;
+  background-color: #dcdff1;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(170, 170, 170, 0.08),
+    rgba(170, 170, 170, 0.08) 3px,
+    transparent 3px,
+    transparent 6px
+  );
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -15,12 +21,18 @@ body {
 header {
   display: flex;
   padding: 3rem;
+  align-items: center;
+}
+
+header > * > img {
+  max-width: 400px;
 }
 
 .profile-name {
   position: absolute;
-  bottom: 1rem;
-  left: 1rem;
+  bottom: 2%;
+  left: 15%;
+  color: rgb(104, 33, 5);
 }
 
 .profile {
@@ -31,15 +43,15 @@ header {
   body {
     margin: 1rem;
   }
-  header {
-    flex-wrap: wrap;
-  }
   .about {
-    width: 100%;
+    max-width: 100vw;
   }
 
-  .about > h3 {
-    font-size: 0.5rem;
+  .profile-name {
+    font-size: 18px;
+  }
+  header {
+    flex-wrap: wrap;
   }
 
   .icon {
@@ -53,7 +65,10 @@ header {
 
 @media screen and (max-width: 1500px) {
   .about {
-    text-wrap: wrap;
+    box-shadow: 5px 5px 5px rgb(95, 97, 124);
+    border-radius: 0 5px 5px 0;
+    max-width: 500px;
+    padding: 20px;
   }
   body {
     margin: 4rem;
@@ -69,11 +84,7 @@ header {
 }
 
 .about > h3 {
-  color: rgb(49, 48, 48);
-}
-
-header > * > img {
-  max-width: 300px;
+  color: rgb(100, 98, 98);
 }
 
 .icon {
