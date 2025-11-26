@@ -56,7 +56,8 @@ header {
     flex-wrap: wrap;
   }
   article,
-  section {
+  section,
+  footer {
     margin: 0.5rem;
   }
 }
